@@ -42,7 +42,7 @@ class LineTest extends TestCase {
    * @dataProvider provider_log_lines
    */
 
-  public function Expected_Attribute_Empty($input, $expected) {
+  public function IP_Matches($input, $expected) {
     $line = new Line($input);
 
     $this->assertEquals($expected, $line->ip);
