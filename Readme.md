@@ -15,7 +15,7 @@ Normally, I would use [Fail2ban][] for this type of project; however, this is ju
 ## Using
 
 ```
-# use PHP like awk (as a line processor)
+# use PHP as an AWK replacement
 % cat /var/log/asterisk/messages | php --process-file almon.php
 ```
 
