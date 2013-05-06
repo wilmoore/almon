@@ -2,6 +2,10 @@
 
 The **Asterisk Log Monitor** _almon_ is a `php` based log monitor for the [Asterisk IP PBX system][asterisk].
 
+> You may be asking yourself, "Why use PHP to parse server logs?"...
+
+Normally, I would use [Fail2ban][] for this type of project; however, this is just a fun excercise and an excuse to show off test driven development in PHP.
+
 ## Installation
 
 ```
@@ -36,4 +40,5 @@ The **Asterisk Log Monitor** _almon_ is a `php` based log monitor for the [Aster
 - Implement IP index
 
 
-[asterisk]:     http://www.asterisk.org/
+[asterisk]:   http://www.asterisk.org/
+[fail2ban]:   http://www.fail2ban.org/
