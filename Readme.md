@@ -12,10 +12,11 @@ Normally, I would use [Fail2ban][] for this type of project; however, this is ju
 # TBD
 ```
 
-## Configuration
+## Using
 
 ```
-# TBD
+# use PHP like awk (as a line processor)
+% cat /var/log/asterisk/messages | php --process-file almon.php
 ```
 
 ## Scheduling
