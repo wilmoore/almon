@@ -59,10 +59,22 @@ sqlite> DELETE FROM failures;
 
 ## Scheduling
 
-Cron (every 5 minutes)
+Install user crontab
 
 ```
-5 * * * * cat /var/log/asterisk/messages | php --process-file almon.php
+crontab -u $USER $HOME/.local/almon/crontab
+```
+
+List user crontab
+
+```
+crontab -u $USER -l
+```
+
+Remove user crontab
+
+```
+crontab -u $USER -r
 ```
 
 ## Executing Test Suite
@@ -87,6 +99,10 @@ Because this project is extremely self-contained; thus, raw PDO was good enough 
 > In that case, why use a mailer library? Why not use the raw PHP `mail` function?
 
 Because the PHP mail interface is extremely low-level and this is very apparent when it comes to authenticating with an external SMTP server.  In this case, there is a lot of value added in introducing a library.
+
+> I see tests coverage for `lib/Line`; however, what about everything else under `lib`?
+
+Diminishing returns...
 
 > Why not distribute this as a phar archive?
 
