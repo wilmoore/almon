@@ -86,6 +86,14 @@ crontab -u $USER -r
 % make test
 ```
 
+## Troubleshooting
+
+> I'm getting some weird PDO error on Ubuntu...
+
+```
+% apt-get install php5-cli
+```
+
 ## FAQ
 
 > Why use PHP to parse a server log instead of something more appropriate like [Fail2ban][]?
