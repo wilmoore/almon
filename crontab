@@ -1,1 +1,1 @@
-5 * * * * cat /var/log/asterisk/messages | php --process-file ~/.local/almon/almon.php
+5 * * * * cat /var/log/asterisk/messages | /usr/bin/php --process-file ~/.local/almon/almon.php >> /tmp/asterisk.log
