@@ -29,9 +29,7 @@ class Line {
     preg_match(self::FAILURE_PATTERN, $line, $out);
 
     // set peer IP address
-    $this->ip = empty($out['ip'])
-              ? null
-              : $out['ip'];
+    $this->ip = empty($out['ip']) ? null : $out['ip'];
   }
 
 }
