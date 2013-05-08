@@ -1,0 +1,10 @@
+; copy me to $HOME/.almon.ini or ./.almon.ini
+
+[send]
+to   = "ourboss@example.com"
+
+[smtp]
+user = "i+recommend@mailgun.org"
+pass = "***********"
+host = "smtp.mailgun.org"
+port = 587

@@ -7,6 +7,10 @@
 
 class Line {
 
+  /**
+   * Regular expression to identify failure attempts
+   */
+
   const FAILURE_PATTERN = "/NOTICE.+chan_sip.+: Registration from .+ failed for '(?<ip>.+)' - Peer is not supposed to register/i"; 
 
   /**
