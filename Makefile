@@ -3,4 +3,4 @@ PHPUNIT_BIN ?= $(firstword $(shell which $(CURDIR)/vendor/bin/phpunit) $(shell w
 test:
 	@$(PHPUNIT_BIN)
 
-.PHONY: clean test
+.PHONY: test
