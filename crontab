@@ -1,0 +1,1 @@
+5 * * * * cat /var/log/asterisk/messages | php --process-file ~/.local/almon/almon.php

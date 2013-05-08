@@ -5,21 +5,21 @@ The **Asterisk Log Monitor** _almon_ is a `php` based log monitor for the [Aster
 ## Installation
 
 ```
-% mkdir -p $HOME/.local/almon
-% cd $HOME/.local/almon
+% mkdir -p ~/.local/almon
+% cd ~/.local/almon
 % curl -#L https://github.com/wilmoore/almon/archive/master.tar.gz | tar xvz --strip 1
 % php composer.phar install
 ```
 
 ## Configuration
 
-User configuraiton
+User configuration (recommended)
 
 ```
-% cp .almon.ini.dist $HOME/.almon.ini
+% cp .almon.ini.dist ~/.almon.ini
 ```
 
-System/Global configuraiton
+System/Global configuration
 
 ```
 % cp .almon.ini.dist ./.almon.ini
@@ -31,13 +31,13 @@ Monitor an asterisk log file
 
 ```
 # use PHP as an AWK replacement
-% cat /var/log/asterisk/messages | php --process-file $HOME/.local/almon/almon.php
+% cat /var/log/asterisk/messages | php --process-file ~/.local/almon/almon.php
 ```
 
 To ignore `SKIPPING` messages, just pipe to `STDERR`.
 
 ```
-% cat /var/log/asterisk/messages | php --process-file $HOME/.local/almon/almon.php 2> /dev/null
+% cat /var/log/asterisk/messages | php --process-file ~/.local/almon/almon.php 2> /dev/null
 ```
 Open IP address store
 
@@ -62,7 +62,7 @@ sqlite> DELETE FROM failures;
 Install user crontab
 
 ```
-crontab -u $USER $HOME/.local/almon/crontab
+crontab -u $USER crontab
 ```
 
 List user crontab
