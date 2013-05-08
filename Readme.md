@@ -98,7 +98,7 @@ Because this project is extremely self-contained; thus, raw PDO was good enough 
 
 > In that case, why use a mailer library? Why not use the raw PHP `mail` function?
 
-Because the PHP mail interface is extremely low-level and this is very apparent when it comes to authenticating with an external SMTP server.  In this case, there is a lot of value added in introducing a library.
+Because the PHP mail interface is extremely low-level and this is very apparent when it comes to authenticating with an external SMTP server.  In this case, there is a lot of value added in introducing a mature, stable and well-tested library.
 
 > I see tests coverage for `lib/Line`; however, what about everything else under `lib`?
 
@@ -110,7 +110,7 @@ I considered it; however, given this is an internal-use tool and not delivered t
 
 > Why does this not work on windows?
 
-This script is currently only tested on unix-like (i.e. POSIX) systems such as Linux, *BSD. This means, it should work on your macbook, but not on a windows 7 machine. Sorry...time trade-off.
+It is possible that it will work on windows (see `getenv('HOME')`); however, this script is currently only tested on unix-like (i.e. POSIX) systems such as Linux, *BSD. This means, it will definitely work on your macbook. Sorry...time trade-off.
 
 
 [asterisk]:   http://www.asterisk.org/
