@@ -51,7 +51,6 @@ class Store {
    * @param String $ip
    * IP address to locate
    */
-
   function exists($ip) {
     $query = $this->db->prepare(self::SELECT_QUERY);
     $query->execute(compact('ip'));
