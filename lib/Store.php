@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @copyright Copyright(c) 2013 Wil Moore III <wil.moore@wilmoore.com>
  * @license   MIT Licensed
@@ -14,13 +13,11 @@ class Store {
    *
    * @var PDO
    */
-
   private $db;
 
   /**
    * Initialize a SQLite database connection
    */
-
   function __construct() {
     $this->db = new PDO('sqlite:/tmp/asterisk.sqlite3');
 
@@ -36,7 +33,6 @@ class Store {
    * @param String $ip
    * IP address to insert
    */
-
   function insert($ip) {
     // bail out if the IP address already exists
     if ($this->exists($ip)) { return; }
