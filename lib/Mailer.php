@@ -35,6 +35,15 @@ class Mailer {
     $this->mailer = Swift_Mailer::newInstance($transport);
   }
 
+  /**
+   * Craft the email notification text and send to recipient
+   *
+   * @param String $ip
+   * IP address
+   *
+   * @param String $to
+   * Recipient email address
+   */
   function __invoke($ip, $to) {
     $message = Swift_Message::newInstance('Asterisk Log Monitor');
 
