@@ -91,7 +91,7 @@ crontab -u $USER -r
 > I'm getting some weird PDO error on Ubuntu...
 
 ```
-% apt-get install php5-cli
+% apt-get install php5-sqlite
 ```
 
 ## FAQ
