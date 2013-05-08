@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @copyright Copyright(c) 2013 Wil Moore III <wil.moore@wilmoore.com>
  * @license   MIT Licensed
@@ -12,7 +11,6 @@ class Mailer {
    *
    * @var Swift_Mailer
    */
-
   private $mailer;
 
   /**
@@ -21,7 +19,6 @@ class Mailer {
    * @param Array $options
    * SMTP options
    */
-
   function __construct($options) {
     // Create the Transport
     $transport = Swift_SmtpTransport::newInstance($options['host'], $options['port']);
@@ -42,15 +39,12 @@ class Mailer {
     $message = Swift_Message::newInstance('Asterisk Log Monitor');
 
     // set sender
-
     $message->setFrom(['almon@example.com' => 'Asterisk Log monitor']);
 
     // set recipient
-
     $message->setTo([$to]);
 
     // set body text
-
     $message->setBody(
       sprintf("IP address %s is trying to register on host %s.", $ip, gethostname())
     );
