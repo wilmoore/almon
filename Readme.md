@@ -6,7 +6,7 @@ The **Asterisk Log Monitor** _almon_ is a `php` based log monitor for the [Aster
 
 ```
 % mkdir -p $HOME/.local/almon
-% cd !$
+% cd $HOME/.local/almon
 % curl -#L https://github.com/wilmoore/almon/archive/master.tar.gz | tar xvz --strip 1
 % php composer.phar install
 ```
