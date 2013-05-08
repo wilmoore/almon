@@ -39,10 +39,10 @@ class Mailer {
     $message = Swift_Message::newInstance('Asterisk Log Monitor');
 
     // set sender
-    $message->setFrom(['almon@example.com' => 'Asterisk Log monitor']);
+    $message->setFrom(array('almon@example.com' => 'Asterisk Log monitor'));
 
     // set recipient
-    $message->setTo([$to]);
+    $message->setTo(array($to));
 
     // set body text
     $message->setBody(
