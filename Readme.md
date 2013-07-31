@@ -34,7 +34,7 @@ Monitor an asterisk log file
 % cat /var/log/asterisk/messages | php --process-file ~/.local/almon/almon.php
 ```
 
-To ignore `SKIPPING` messages, just pipe to `STDERR`.
+To ignore `SKIPPING` messages, pipe `STDERR (2)` to `/dev/null`.
 
 ```
 % cat /var/log/asterisk/messages | php --process-file ~/.local/almon/almon.php 2> /dev/null
